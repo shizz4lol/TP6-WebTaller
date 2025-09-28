@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="estilos_form+css.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Inscripcion Taller de Fotografia</h1>
+    <form method="post" action="#" enctype="multipart/form-data">
+        <fieldset id="f1">
+            <legend>Datos del Participante</legend>
+            <label for="nom1">Nombre Completo (obligatorio)</label><br>
+            <input type="text" id="nom1" name="nom" required><br>
+            <label for="con1">Contraseña de acceso (15 max)</label><br>
+            <input type="password" id="con1" name="con1" maxlength="15"><br>
+            <label for="correo1">Correo Electronico</label><br>
+            <input type="email" id="correo1" name="correo1"><br>
+            <label for="fecha">Fecha de nacimiento</label><br>
+            <input type="date" id="fecha" name="fecha"><br>
+            <label for="foto">Foto de perfil</label><br>
+            <input type="file" id="foto" name="foto"><br>
+        </fieldset>
+        <fieldset id="f2">
+            <legend>Preferencias fotograficas</legend>
+            <label>Tipo de camara</label><br>
+            <input type="radio" id="reflex" name="camara" value="reflex">
+            <label for="reflex">Reflex</label><br>
+            <input type="radio" id="mirror" name="camara" value="mirror">
+            <label for="mirror">Mirrorless</label><br>
+            <input type="radio" id="movil" name="camara" value="movil">
+            <label for="movil">Movil</label><br>
+            <label>Tematicas preferidas</label><br>
+            <input type="checkbox" id="paisa" name="paisa" value="paisa">
+            <label for="paisa">Paisajes</label><br>
+            <input type="checkbox" id="retra" name="retra" value="retra">
+            <label for="retra">Retratos</label><br>
+            <input type="checkbox" id="macro" name="macro" value="macro" disabled>
+            <label for="macro">Macro (no disponible)</label><br>
+            <label for="pais1">Pais de Residencia</label><br>
+            <select name="pais1" id="pais1">
+                <option value="1">Argentina</option>
+                <option value="2">Bolivia</option>
+                <option value="3">España</option>
+                <option value="4">Venezuela</option>
+            </select><br>
+            <label for="desc">¿Que esperas aprender en el taller?</label><br>
+            <textarea name="desc" id="desc">Escribe aqui...</textarea>
+        </fieldset>
+        <input type="submit" name="mandar1" id="mandar1" value="Enviar inscripcion" class="boton"><input type="reset" id="borrar1" name="borrar1" value="Borrar datos" class="boton">
+    </form>
+    <h1>Registro maraton 2025</h1>
+    <form method="post" action="#" enctype="multipart/form-data">
+        <fieldset id="f3">
+            <legend>Datos del corredor</legend>
+            <label for="nom2">Nombre Completo (obligatorio)</label><br>
+            <input type="text" id="nom2" name="nom" required><br>
+             <label for="con2">Contraseña de acceso (12 max)</label><br>
+            <input type="password" id="con2" name="con2" maxlength="12"><br>
+            <label for="correo2">Correo Electronico</label><br>
+            <input type="email" id="correo2" name="correo2"><br>
+            <label for="fecha2">Fecha de nacimiento</label><br>
+            <input type="date" id="fecha2" name="fecha2"><br>
+            <label for="foto2">Foto del corredor</label><br>
+            <input type="file" id="foto2" name="foto2"><br>
+        </fieldset>
+        <fieldset id="f4">
+            <legend>Informacion deportiva</legend>
+            <label>Distancia a correr</label><br>
+            <input type="radio" id="5" name="camara" value="5">
+            <label for="5">5K</label><br>
+            <input type="radio" id="10" name="camara" value="10">
+            <label for="10">10K</label><br>
+            <input type="radio" id="21" name="camara" value="21">
+            <label for="21">21K</label><br>
+            <label>Preferencias</label><br>
+            <input type="checkbox" id="kit" name="kit" value="kit">
+            <label for="kit">Kit de corredor</label><br>
+            <input type="checkbox" id="meda" name="meda" value="meda">
+            <label for="meda">Medalla Finisher</label><br>
+            <input type="checkbox" id="reme" name="reme" value="reme" disabled>
+            <label for="reme">Remera Oficial (agotada)</label><br>
+            <label for="pais2">Pais</label><br>
+            <select name="pais2" id="pais2">
+                <option value="1">Argentina</option>
+                <option value="2">Bolivia</option>
+                <option value="3">España</option>
+                <option value="4">Venezuela</option>
+            </select><br>
+            <label for="comen">Comentarios adicionales</label><br>
+            <textarea name="comen" id="comen">Escribe aqui...</textarea><br>
+        </fieldset>
+        <input type="submit" name="mandar1" id="mandar1" value="Enviar inscripcion" class="boton"><input type="reset" id="borrar1" name="borrar1" value="Borrar datos" class="boton">
+    </form><br>
+    <h2>Respuestas actividad:</h2>
+    <p>CSS significa "Cascading Style Sheets" o sea hojas de estilo en cascada, y es un programa utilizado para darle el diseño a los documentos HTML<br>
+      La diferencia entre aplicar estilos en linea, en <head> y como archivo externo seria basicamente la comodidad y segun cuantos elementos necesiten un 
+        estilo. Si necesito que solo un elemento tenga cierto diseño, puedo usar css en linea. Ahora, si voy aplicar el mismo diseño a varias paginas, un
+        archivo externo es lo mejor, ya que se puede vincular con tantos archivos HTML como sea necesario.
+    </p>
+    <h3>Selectores de etiqueta</h3>
+    <p>Permiten aplicar el mismo estilo a un tipo de etiqueta en especifico (p, h1, h3, etcetera)</p>
+    <h3>Clase</h3>
+    <p>Conjunto de propiedades/estilos que son aplicados a distintos elementos. Por ejemplo ".libros"</p>
+    <h3>ID</h3>
+    <p>Tambien es un conjuto de propiedades, pero se aplican solo a un elemento en especifico porque el ID es unico en todo un HTML. Por ejemplo
+       "#dni".
+    </p>
+</body>
+</html>
