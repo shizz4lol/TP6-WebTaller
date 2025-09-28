@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPASO</title>
+</head>
+<body>
+    <!--el numeral es para hacer que el formulario se recargue ya que no hay servidor de BD-->
+    <!--//el metodo post "encripta" los datos ya que el get los lleva en la URL-->
+    
+    <form action="#" method="post">
+        <fieldset>
+            <!-- //descripcion que esta entre el recuadro del fieldset -->
+            <legend>Encuesta de Satisfaccion del cliente</legend>
+            <label for="nom">Nombre (obligatorio)</label>
+            <!-- /inputs basicos de dato= tipo, id, name. -->
+            <input type="text" id="nom" name="nom" maxlength="20" required><br>
+            <label for="ape">Apellido (obligatorio)</label>
+            <input type="text" id="ape" name="ape" maxlength="30" required><br>
+            <label for="tel">Telefono (opcional)</label>
+            <input type="text" id="tel" name="tel" maxlength="12"><br>
+            <label for="sede">Sede</label>
+            <select name="sede" id="sede">
+                <option>Neuquen</option>
+                <option>Cipoletti</option>
+                <option>Plottier</option>
+                <option>Gral. Roca</option>
+            </select><br>
+            <label>¿Como calificaria su satisfaccion con nuestro servicio?</label><br>
+            <input type="radio" id="1" name="punto" value="1">
+            <label>1</label>
+            <input type="radio" id="2" name="punto" value="2">
+            <label>2</label>
+            <input type="radio" id="3" name="punto" value="3">
+            <label>3</label>
+            <input type="radio" id="4" name="punto" value="4">
+            <label>4</label>
+            <input type="radio" id="5" name="punto" value="5" checked>
+            <label>5</label><br>
+            <label for="comen">Comentarios adicionales: </label><br>
+            <textarea name="comen" id="comen" cols="20" rows="5"></textarea><br>
+            <input type="checkbox" name="eleccion" id="eleccion" checked>
+            <label>¿Le gustaria que nos pongamos en contacto con usted para mas detalles?</label>
+        </fieldset>
+    </form><br>
+    <h1>Formulario de Registro</h1>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nom2">Nombre y Apellido</label><br>
+            <input type="text" name="nom2" id="nom2"><br>
+            <label id="correo">Correo Electronico (obligatorio)</label><br>
+            <input type="email" name="correo" id="correo" maxlength="25" required><br>
+            <label for="con">Contraseña (obligatorio)</label><br>
+            <input type="password" id="con" name="con" maxlength="8" required><br>
+            <label>Intereses:</label><br>
+            <input type="radio" name="intereses1" value="1" id="1" checked>
+            <label id="1">Deporte</label><br>
+            <input type="radio" name="intereses2" value="2" id="2">
+            <label id="2">Musica</label><br>
+            <input type="radio" name="intereses3" value="3" id="3">
+            <label id="3">Arte</label><br>
+            <label for="comen2">Comentarios:</label><br>
+            <textarea name="comen2" id="comen2" cols="20" rows="5"></textarea><br>
+            <label for="pais">Pais:</label>
+            <select id="pais">
+                <option selected>Seleccione..</option>
+                <option>Argentina</option>
+                <option>Uruguay</option>
+                <option>Chile</option>
+                <option>Paraguay</option>
+            </select>
+        </fieldset>
+        <input type="checkbox" name="terminos" id="terminos" value="1" checked>
+        <label>Acepta los terminos y condiciones</label><br>
+        <input type="checkbox" name="enviar_em" id="enviar_em" value="2">
+        <label>Deseo recibir emails con novedades</label><br>
+        <input type="submit" name="enviar" value="Enviar Datos">
+        <input type="reset" name="reset" value="Borrar datos" disabled>
+    </form>
+    <h1>Registro para el Evento</h1>
+    <form method="post" action="#">
+        <label for="nom3">Nombre Completo:</label><br>
+        <input type="text" id="nom3" name="nom3" placeholder="Ej: Juan Perez"><br>
+        <label for="email2">Correo Electronico:</label><br>
+        <input type="email" id="email2" name="email2" placeholder="ejemplo@correo"><br>
+        <label for="tel2">Telefono:</label><br>
+        <input type="text" id="tel2" name="tel2" placeholder="Ej: +34 600 123 456"><br>
+        <label for="fecha">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha"><br>
+        <label for="pais2">Pais de origen:</label><br>
+        <select id="pais2">
+                <option selected>Seleccione..</option>
+                <option>Argentina</option>
+                <option>Uruguay</option>
+                <option>Chile</option>
+                <option>Paraguay</option>
+        </select><br>
+        <label>Intereses en el evento</label>
+            <!-- radios al tener distinto nombre pueden ser seleccionados todos o ninguno -->
+        <!-- //Si tuviesen EL MISMO name, solo permite seleccionar uno solo. -->
+        <input type="checkbox" name="taller" id="taller" value="1">
+        <label for="taller">Talleres</label>
+        <input type="checkbox" name="confe" id="confe" value="2">
+        <label for="confe">Conferencias</label>
+        <input type="checkbox" name="netw" id="netw" value="3">
+        <label for="netw">Networking</label><br>
+        <label for="comen3">Comentarios adicionales:</label><br>
+        <textarea id="comen3" name="comen3" cols="20" rows="5" placeholder="Escriba aqui sus comentarios..."></textarea><br>
+        <input type="submit" value="Enviar datos" name="envio">
+        <input type="reset" value="Borrar datos" name="borrar">
+    </form>
+</body>
+</html>
